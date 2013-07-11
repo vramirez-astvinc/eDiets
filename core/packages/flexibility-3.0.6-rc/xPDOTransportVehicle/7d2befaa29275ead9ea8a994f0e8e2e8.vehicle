@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility-3.0.6-rc/xPDOTransportVehicle/7d2befaa29275ead9ea8a994f0e8e2e8/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'simplesearch-1.6.0-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/xPDOTransportVehicle\\/7d2befaa29275ead9ea8a994f0e8e2e8.resolve.simplesearch.resolver","type":"php","name":"resolve.simplesearch"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/xPDOTransportVehicle\\/7d2befaa29275ead9ea8a994f0e8e2e8.validate.simplesearch.validator","type":"php","name":"validate.simplesearch"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '4527e64aa5cc9e093394294040028074',
+  'package' => '',
+  'signature' => '7d2befaa29275ead9ea8a994f0e8e2e8',
+  'native_key' => '4527e64aa5cc9e093394294040028074',
+);

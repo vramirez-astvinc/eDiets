@@ -1,0 +1,630 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'b752f6b59f0200479b3928181fb76ebc' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"name":"page_gallery","description":"Gallery chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[!GalleryAlbums? &toPlaceholder=`GalleryAlbums` &limit=`0` &albumCoverSort=`rank` &prominentOnly=`0` &rowTpl=`FlexibilityGalAlbumRowTpl` &thumbWidth=`195` &thumbHeight=`140`]]\\r\\n[[!Gallery? &checkForRequestTagVar=`1` &toPlaceholder=`Gallery` &useCss=`0` &containerTpl=`FlexibilityGalleryAlbumTpl` &thumbWidth=`195` &thumbHeight=`140` &thumbTpl=`FlexibilityGalItemThumb` &imageWidth=`800` &imageHeight=`800`]]\\r\\n[[!If? &subject=`[[+Gallery]]` &operator=`isempty` &then=`[[+GalleryAlbums]]` &else=`[[+Gallery]]`]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[!GalleryAlbums? &toPlaceholder=`GalleryAlbums` &limit=`0` &albumCoverSort=`rank` &prominentOnly=`0` &rowTpl=`FlexibilityGalAlbumRowTpl` &thumbWidth=`195` &thumbHeight=`140`]]\\r\\n[[!Gallery? &checkForRequestTagVar=`1` &toPlaceholder=`Gallery` &useCss=`0` &containerTpl=`FlexibilityGalleryAlbumTpl` &thumbWidth=`195` &thumbHeight=`140` &thumbTpl=`FlexibilityGalItemThumb` &imageWidth=`800` &imageHeight=`800`]]\\r\\n[[!If? &subject=`[[+Gallery]]` &operator=`isempty` &then=`[[+GalleryAlbums]]` &else=`[[+Gallery]]`]]"}',
+        'guid' => 'e3a7cd35271117e3d8fb7c6b4ade3d3b',
+        'native_key' => 3,
+        'signature' => 'fd0196544943aebd046521f23a801f58',
+      ),
+      'f1f4e9cdd152c56360d3e22155b2f1d2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":4,"source":0,"property_preprocess":0,"name":"page_lightbox_trigger","description":"Trigger for optional page lightbox","editor_type":0,"category":0,"cache_type":0,"snippet":"<a href=\\"#\\" class=\\"button\\" data-reveal-id=\\"page_lightbox\\" data-animation=\\"fade\\">Click me for a lightbox<\\/a>","locked":0,"properties":"","static":0,"static_file":"","content":"<a href=\\"#\\" class=\\"button\\" data-reveal-id=\\"page_lightbox\\" data-animation=\\"fade\\">Click me for a lightbox<\\/a>"}',
+        'guid' => '93997e53bf2f29b2713491b8078d625c',
+        'native_key' => 4,
+        'signature' => '54a3a6a97f9c4b5788cf9c1e15dd6c67',
+      ),
+      '8b337ad60758d2e01851554bc8a6adeb' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":5,"source":0,"property_preprocess":0,"name":"logoTpl","description":"Site logo template","editor_type":0,"category":0,"cache_type":0,"snippet":"<img src=\\"[[+siteLogo]]\\" alt=\\"[[++site_name]] logo\\" \\/>","locked":0,"properties":"","static":0,"static_file":"","content":"<img src=\\"[[+siteLogo]]\\" alt=\\"[[++site_name]] logo\\" \\/>"}',
+        'guid' => '4560c6efffacefcfd0a0af196f7bffbe',
+        'native_key' => 5,
+        'signature' => '460f4411708baba5da400641920e7446',
+      ),
+      'f385fdd10687ff281cebcbc03f783bfa' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":6,"source":0,"property_preprocess":0,"name":"MyEmailChunk","description":"Email chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"<small>[[+name]] ([[+email]]) Wrote: <\\/small>\\r\\n<p>[[+text]]<\\/p>","locked":0,"properties":"","static":0,"static_file":"","content":"<small>[[+name]] ([[+email]]) Wrote: <\\/small>\\r\\n<p>[[+text]]<\\/p>"}',
+        'guid' => '09cd1895ffa8be7fe2599b01d41b3871',
+        'native_key' => 6,
+        'signature' => '654888e1aed9043378be075f6a4cefee',
+      ),
+      '817e6d442d6d770f60752ca6f762c76f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":7,"source":0,"property_preprocess":0,"name":"contactform","description":"Contactform code","editor_type":0,"category":0,"cache_type":0,"snippet":"[[!FormIt?\\r\\n&hooks=`spam,email,redirect`\\r\\n&emailTpl=`MyEmailChunk`\\r\\n&emailUseFieldForSubject=`1`\\r\\n&emailTo=`[[getResources? &resources =`11` &tpl=`email_adress_tpl` &includeTVs=`1` &processTVs=`1` &limit=`1` &tvPrefix=`` ]]`\\r\\n&redirectTo=`13`\\r\\n&validate=`name:required,email:email:required,subject:required,text:required:stripTags`\\r\\n]]\\r\\n<div class=\\"row\\">\\r\\n  <div class=\\"twelve columns\\">\\r\\n    [[!+fi.error_message:notempty=`<p>[[!+fi.error_message]]<\\/p>`]]\\r\\n    <form id=\\"contact_form\\" action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"custom\\">\\r\\n      <input type=\\"hidden\\" name=\\"nospam:blank\\" value=\\"\\" \\/>\\r\\n      <div class=\\"row\\">\\r\\n        <div class=\\"four columns\\">\\r\\n          <label>\\r\\n            Enter your name.\\r\\n            <span class=\\"error\\">[[!+fi.error.name]]<\\/span>\\r\\n          <\\/label>\\r\\n          <input type=\\"text\\" name=\\"name\\" id=\\"name\\" value=\\"[[!+fi.name]]\\" placeholder=\\"e.g. James\\" class=\\"eight\\" \\/> \\r\\n        <\\/div>\\r\\n        <div class=\\"four columns\\">\\r\\n          <label>\\r\\n            Fill in your email.\\r\\n            <span class=\\"error\\">[[!+fi.error.email]]<\\/span>\\r\\n          <\\/label>\\r\\n          <input type=\\"text\\" name=\\"email\\" id=\\"email\\" value=\\"[[!+fi.email]]\\" placeholder=\\"e.g. yourname@gmail.com\\" class=\\"eight\\" \\/>\\r\\n        <\\/div>\\r\\n        <div class=\\"four columns\\">\\r\\n          <label>\\r\\n            Enter the subject of this mail.\\r\\n            <span class=\\"error\\">[[!+fi.error.subject]]<\\/span>\\r\\n          <\\/label>\\r\\n          <input type=\\"text\\" name=\\"subject\\" id=\\"subject\\" value=\\"[[!+fi.subject]]\\" placeholder=\\"e.g. My suggestion\\" class=\\"eight\\" \\/>\\r\\n        <\\/div>\\r\\n      <\\/div>\\r\\n      <label>\\r\\n        Fill in your message or question.\\r\\n        <span class=\\"error\\">[[!+fi.error.text]]<\\/span>\\r\\n      <\\/label>\\r\\n      <textarea name=\\"text\\" id=\\"text\\" value=\\"[[!+fi.text]]\\" placeholder=\\"Please write your message\\">[[!+fi.text]]<\\/textarea>\\r\\n      <input type=\\"submit\\" value=\\"Send\\" class=\\"button small\\" \\/>\\r\\n    <\\/form>\\r\\n  <\\/div>\\r\\n<\\/div>","locked":0,"properties":"","static":0,"static_file":"","content":"[[!FormIt?\\r\\n&hooks=`spam,email,redirect`\\r\\n&emailTpl=`MyEmailChunk`\\r\\n&emailUseFieldForSubject=`1`\\r\\n&emailTo=`[[getResources? &resources =`11` &tpl=`email_adress_tpl` &includeTVs=`1` &processTVs=`1` &limit=`1` &tvPrefix=`` ]]`\\r\\n&redirectTo=`13`\\r\\n&validate=`name:required,email:email:required,subject:required,text:required:stripTags`\\r\\n]]\\r\\n<div class=\\"row\\">\\r\\n  <div class=\\"twelve columns\\">\\r\\n    [[!+fi.error_message:notempty=`<p>[[!+fi.error_message]]<\\/p>`]]\\r\\n    <form id=\\"contact_form\\" action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"custom\\">\\r\\n      <input type=\\"hidden\\" name=\\"nospam:blank\\" value=\\"\\" \\/>\\r\\n      <div class=\\"row\\">\\r\\n        <div class=\\"four columns\\">\\r\\n          <label>\\r\\n            Enter your name.\\r\\n            <span class=\\"error\\">[[!+fi.error.name]]<\\/span>\\r\\n          <\\/label>\\r\\n          <input type=\\"text\\" name=\\"name\\" id=\\"name\\" value=\\"[[!+fi.name]]\\" placeholder=\\"e.g. James\\" class=\\"eight\\" \\/> \\r\\n        <\\/div>\\r\\n        <div class=\\"four columns\\">\\r\\n          <label>\\r\\n            Fill in your email.\\r\\n            <span class=\\"error\\">[[!+fi.error.email]]<\\/span>\\r\\n          <\\/label>\\r\\n          <input type=\\"text\\" name=\\"email\\" id=\\"email\\" value=\\"[[!+fi.email]]\\" placeholder=\\"e.g. yourname@gmail.com\\" class=\\"eight\\" \\/>\\r\\n        <\\/div>\\r\\n        <div class=\\"four columns\\">\\r\\n          <label>\\r\\n            Enter the subject of this mail.\\r\\n            <span class=\\"error\\">[[!+fi.error.subject]]<\\/span>\\r\\n          <\\/label>\\r\\n          <input type=\\"text\\" name=\\"subject\\" id=\\"subject\\" value=\\"[[!+fi.subject]]\\" placeholder=\\"e.g. My suggestion\\" class=\\"eight\\" \\/>\\r\\n        <\\/div>\\r\\n      <\\/div>\\r\\n      <label>\\r\\n        Fill in your message or question.\\r\\n        <span class=\\"error\\">[[!+fi.error.text]]<\\/span>\\r\\n      <\\/label>\\r\\n      <textarea name=\\"text\\" id=\\"text\\" value=\\"[[!+fi.text]]\\" placeholder=\\"Please write your message\\">[[!+fi.text]]<\\/textarea>\\r\\n      <input type=\\"submit\\" value=\\"Send\\" class=\\"button small\\" \\/>\\r\\n    <\\/form>\\r\\n  <\\/div>\\r\\n<\\/div>"}',
+        'guid' => '6647dbe380cf93c443edf4e89cfda5ee',
+        'native_key' => 7,
+        'signature' => 'af9ec4e0413f46f674b4aec224804195',
+      ),
+      '1bb74063e718e5323899c40277d86dd8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":8,"source":0,"property_preprocess":0,"name":"email_adress_tpl","description":"Email adress for the contactform","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+email_adress]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+email_adress]]"}',
+        'guid' => '3d7a2b10efdd2283ceb9626e84bd1fe5',
+        'native_key' => 8,
+        'signature' => '7c87ba56fb7445554e116fdd10960e3a',
+      ),
+      '75ef841c2e278da98efc62f6119a92db' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":9,"source":0,"property_preprocess":0,"name":"FlexibilityGalAlbumRowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"albumPreview\\">\\r\\n    <h3><a href=\\"[[~[[*id]]?&[[+albumRequestVar]]=`[[+id]]`]]\\">[[+name]]<\\/a><\\/h3>\\r\\n    <div class=\\"thumb\\">\\r\\n        <a href=\\"[[~[[*id]]?&[[+albumRequestVar]]=`[[+id]]`]]\\"><img src=\\"[[+image]]\\" alt=\\"[[+name]]\\"\\/><\\/a>\\r\\n    <\\/div>\\r\\n    <div class=\\"desc\\">\\r\\n        <p>[[+description]]<\\/p>\\r\\n        <a href=\\"[[~[[*id]]?&[[+albumRequestVar]]=`[[+id]]`]]\\" class=\\"view\\">View gallery<\\/a>\\r\\n    <\\/div>\\r\\n<\\/div>\\r\\n","locked":0,"properties":"","static":0,"static_file":"","content":"<div class=\\"albumPreview\\">\\r\\n    <h3><a href=\\"[[~[[*id]]?&[[+albumRequestVar]]=`[[+id]]`]]\\">[[+name]]<\\/a><\\/h3>\\r\\n    <div class=\\"thumb\\">\\r\\n        <a href=\\"[[~[[*id]]?&[[+albumRequestVar]]=`[[+id]]`]]\\"><img src=\\"[[+image]]\\" alt=\\"[[+name]]\\"\\/><\\/a>\\r\\n    <\\/div>\\r\\n    <div class=\\"desc\\">\\r\\n        <p>[[+description]]<\\/p>\\r\\n        <a href=\\"[[~[[*id]]?&[[+albumRequestVar]]=`[[+id]]`]]\\" class=\\"view\\">View gallery<\\/a>\\r\\n    <\\/div>\\r\\n<\\/div>\\r\\n"}',
+        'guid' => 'ac407b5f6eadca5aec921db888ac3056',
+        'native_key' => 9,
+        'signature' => 'a12265e46b792eb383b9d4538b4fb8ad',
+      ),
+      '698fcb877f738649a27af02d9163df42' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":10,"source":0,"property_preprocess":0,"name":"FlexibilityGalItemThumb","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"[[+cls]] gallery_item\\">\\r\\n    <a href=\\"[[+image]]\\" class=\\"fancybox\\" rel=\\"group\\" title=\\"[[+description]]\\">\\r\\n        <img class=\\"[[+imgCls]]\\" src=\\"[[+thumbnail]]\\" alt=\\"[[+name]]\\" \\/>\\r\\n    <\\/a>\\r\\n    [[+name]]\\r\\n<\\/div>","locked":0,"properties":"","static":0,"static_file":"","content":"<div class=\\"[[+cls]] gallery_item\\">\\r\\n    <a href=\\"[[+image]]\\" class=\\"fancybox\\" rel=\\"group\\" title=\\"[[+description]]\\">\\r\\n        <img class=\\"[[+imgCls]]\\" src=\\"[[+thumbnail]]\\" alt=\\"[[+name]]\\" \\/>\\r\\n    <\\/a>\\r\\n    [[+name]]\\r\\n<\\/div>"}',
+        'guid' => 'f4076d9e6a9b9254022b97f4776373d8',
+        'native_key' => 10,
+        'signature' => '09842684c7e1e517c5393b5b68474dae',
+      ),
+      '2e354162c452c7fe9063d2733f8008b3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":11,"source":0,"property_preprocess":0,"name":"FlexibilityGalleryAlbumTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<h3>[[+album_name]]<\\/h3>\\r\\n<p>[[+album_description]]<\\/p>\\r\\n[[+thumbnails]]","locked":0,"properties":"","static":0,"static_file":"","content":"<h3>[[+album_name]]<\\/h3>\\r\\n<p>[[+album_description]]<\\/p>\\r\\n[[+thumbnails]]"}',
+        'guid' => '8e2ab8a0f78740b85862231026dba85a',
+        'native_key' => 11,
+        'signature' => 'f19ed8643d1cd4c9880d4fed7aa30d2a',
+      ),
+      'd16f070be75c325fc0d95b7e6812102e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":12,"source":0,"property_preprocess":0,"name":"FooterBox01Tpl","description":"Content for footer box 1","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+footer_box_01]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+footer_box_01]]"}',
+        'guid' => '34b42d673d00e62e9aceaa2896f7fff9',
+        'native_key' => 12,
+        'signature' => 'cc97669fab29b7f7ccd9c4f700f1307e',
+      ),
+      '740e28f2c76cc2f3445d994984d19e92' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":13,"source":0,"property_preprocess":0,"name":"FooterBox02Tpl","description":"Content for footer box 2","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+footer_box_02]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+footer_box_02]]"}',
+        'guid' => 'f8b4268b0c502cd9ec37bb028834e735',
+        'native_key' => 13,
+        'signature' => 'e199d75670fd659e5cf0c4636130cae5',
+      ),
+      '2f37eb0e78ec94ed904a358858737e5c' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":14,"source":0,"property_preprocess":0,"name":"FooterBox03Tpl","description":"Content for footer box 3","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+footer_box_03]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+footer_box_03]]"}',
+        'guid' => 'ab22e4edc5949191ae6006cd6f66c378',
+        'native_key' => 14,
+        'signature' => '93bbbd875dee57d285b53434f491bb7f',
+      ),
+      '4aff9f04aaa69baf1789b589f6e3ee2d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":15,"source":0,"property_preprocess":0,"name":"FooterBox04Tpl","description":"Content for footer box 4","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+footer_box_04]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+footer_box_04]]"}',
+        'guid' => '803c02153771d56f4ab8881f39bca426',
+        'native_key' => 15,
+        'signature' => 'e1c53beefdc4e61ce2a1e44c3c6baf1e',
+      ),
+      '884025d4dfeda2fa7554dac302743746' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":16,"source":0,"property_preprocess":0,"name":"FooterBoxNumberTpl","description":"TV needed for the footerboxes option","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+FooterBoxNumber]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+FooterBoxNumber]]"}',
+        'guid' => 'defcaeb9c68e3aaeb54bae20879cf876',
+        'native_key' => 16,
+        'signature' => '2a496b8193c56b0852eb13413971dce2',
+      ),
+      'e2ff3f5ef0d539e39c8a05d90be87f27' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":17,"source":0,"property_preprocess":0,"name":"innerTpl","description":"Navigation sub ul code","editor_type":0,"category":0,"cache_type":0,"snippet":"<!-- innerTpl -->\\r\\n<ul class=\\"sublist [[+wf.classnames]]\\">\\r\\n[[+wf.wrapper]]\\r\\n<\\/ul>","locked":0,"properties":"","static":0,"static_file":"","content":"<!-- innerTpl -->\\r\\n<ul class=\\"sublist [[+wf.classnames]]\\">\\r\\n[[+wf.wrapper]]\\r\\n<\\/ul>"}',
+        'guid' => 'fa4f2f8fb51ea0bd4544d495408290fa',
+        'native_key' => 17,
+        'signature' => 'be9e1cefd8affa5b49b1cc30eddd0699',
+      ),
+      '9e3e060b87413d3243591b164aaf802b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":18,"source":0,"property_preprocess":0,"name":"rowTpl","description":"Navigation row code","editor_type":0,"category":0,"cache_type":0,"snippet":"<!-- rowTpl -->\\r\\n<li[[+wf.id]] class=\\"[[+wf.classnames]]\\">\\r\\n<a href=\\"[[+wf.link]]\\" title=\\"[[+wf.title]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\r\\n[[+wf.wrapper]]\\r\\n<\\/li>","locked":0,"properties":"","static":0,"static_file":"","content":"<!-- rowTpl -->\\r\\n<li[[+wf.id]] class=\\"[[+wf.classnames]]\\">\\r\\n<a href=\\"[[+wf.link]]\\" title=\\"[[+wf.title]]\\" [[+wf.attributes]]>[[+wf.linktext]]<\\/a>\\r\\n[[+wf.wrapper]]\\r\\n<\\/li>"}',
+        'guid' => 'a171e4e315d9663a1d834d4ba80df2eb',
+        'native_key' => 18,
+        'signature' => '14830adbdf75604ddc6c9682a24ee8a8',
+      ),
+      '09df0b4f643cdbb3ae897a4859360266' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":19,"source":0,"property_preprocess":0,"name":"SearchFormTpl","description":"Search form template","editor_type":0,"category":0,"cache_type":0,"snippet":"<form id=\\"my_id\\" action=\\"[[~[[+landing:default=`[[*id]]`]]]]\\" method=\\"[[+method:default=`get`]]\\">\\r\\n\\t<fieldset class=\\"search\\">\\r\\n\\t\\t<input id=\\"searchField\\" class=\\"my_class box\\" type=\\"text\\" name=\\"flexibility_search_field\\" value=\\"\\"\\/>\\r\\n\\t\\t<button class=\\"btn\\" title=\\"Submit Search\\">Search<\\/button>\\r\\n\\t<\\/fieldset>\\r\\n\\r\\n    <input type=\\"hidden\\" name=\\"id\\" value=\\"[[+landing:default=[[*id]]]]\\" \\/>\\r\\n<\\/form>","locked":0,"properties":"","static":0,"static_file":"","content":"<form id=\\"my_id\\" action=\\"[[~[[+landing:default=`[[*id]]`]]]]\\" method=\\"[[+method:default=`get`]]\\">\\r\\n\\t<fieldset class=\\"search\\">\\r\\n\\t\\t<input id=\\"searchField\\" class=\\"my_class box\\" type=\\"text\\" name=\\"flexibility_search_field\\" value=\\"\\"\\/>\\r\\n\\t\\t<button class=\\"btn\\" title=\\"Submit Search\\">Search<\\/button>\\r\\n\\t<\\/fieldset>\\r\\n\\r\\n    <input type=\\"hidden\\" name=\\"id\\" value=\\"[[+landing:default=[[*id]]]]\\" \\/>\\r\\n<\\/form>"}',
+        'guid' => '334fa50f543b2623fe2547b23101459f',
+        'native_key' => 19,
+        'signature' => 'c724b031661667bf0af2b48563f6b549',
+      ),
+      '848014ddd242d7c8d050631b233f3d98' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":20,"source":0,"property_preprocess":0,"name":"slideTpl","description":"Code for slider slide.","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"slide\\">\\r\\n\\t<img src=\\"[[++site_url]][[+image]]\\" alt=\\"[[+description]]\\" \\/>\\r\\n\\t[[+content:notempty=`\\r\\n\\t<div class=\\"slide_content\\">\\r\\n\\t\\t[[+content]]\\r\\n\\t<\\/div>\\r\\n\\t`]]\\r\\n<\\/div>","locked":0,"properties":"","static":0,"static_file":"","content":"<div class=\\"slide\\">\\r\\n\\t<img src=\\"[[++site_url]][[+image]]\\" alt=\\"[[+description]]\\" \\/>\\r\\n\\t[[+content:notempty=`\\r\\n\\t<div class=\\"slide_content\\">\\r\\n\\t\\t[[+content]]\\r\\n\\t<\\/div>\\r\\n\\t`]]\\r\\n<\\/div>"}',
+        'guid' => '087fb711d60ea14039c0156e076e9812',
+        'native_key' => 20,
+        'signature' => 'e56fd09843ce59c4d595e7adbcacfcd0',
+      ),
+      '439f7ad83f7dd1b8a9a75f5bffe66535' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":21,"source":1,"property_preprocess":0,"name":"flexibility_header","description":"Header for the Flexibility template","editor_type":0,"category":0,"cache_type":0,"snippet":null,"locked":0,"properties":null,"static":1,"static_file":"assets\\/templates\\/flexibility\\/flexibility_header.html","content":null}',
+        'guid' => '956869e296a1fa4d1e37367a74ac8890',
+        'native_key' => 21,
+        'signature' => '49f64d9d8c68ad0f9358a81308b1cc1a',
+      ),
+      '19b3e1236771c79062a31865f450ccdf' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":22,"source":1,"property_preprocess":0,"name":"flexibility_footer","description":"Footer for the Flexibility template","editor_type":0,"category":0,"cache_type":0,"snippet":null,"locked":0,"properties":null,"static":1,"static_file":"assets\\/templates\\/flexibility\\/flexibility_footer.html","content":null}',
+        'guid' => '11e3565cb0362ede4de3aef1cbc2b64e',
+        'native_key' => 22,
+        'signature' => 'f44150a769d343f93ce6fe61fe2acff7',
+      ),
+      'da35c534ab54166c15e6378c6d37c111' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":23,"source":0,"property_preprocess":0,"name":"navMobileInnerHereTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<option value=\\"[[+wf.link]]\\" selected=\\"selected\\">--- [[+wf.linktext]][[+wf.wrapper]]<\\/option>","locked":0,"properties":"","static":0,"static_file":"","content":"<option value=\\"[[+wf.link]]\\" selected=\\"selected\\">--- [[+wf.linktext]][[+wf.wrapper]]<\\/option>"}',
+        'guid' => '2231a9e1f04bff7303c48e64d20bbd8c',
+        'native_key' => 23,
+        'signature' => '82d0be3de9edbfdb72c8d6aab37a781b',
+      ),
+      'f3487729e73c043d926b5ae4fc5bca75' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":24,"source":0,"property_preprocess":0,"name":"navMobileInnerRowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<option value=\\"[[+wf.link]]\\">--- [[+wf.linktext]][[+wf.wrapper]]<\\/option>","locked":0,"properties":"","static":0,"static_file":"","content":"<option value=\\"[[+wf.link]]\\">--- [[+wf.linktext]][[+wf.wrapper]]<\\/option>"}',
+        'guid' => '605363fb08dc562ad93a9575685b22f5',
+        'native_key' => 24,
+        'signature' => 'a795fe75e0c9d4e33af74f2f9767dda3',
+      ),
+      '2184ddea888e83204e0880bd0b03a509' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":25,"source":0,"property_preprocess":0,"name":"navMobileHereTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<option value=\\"[[+wf.link]]\\" selected=\\"selected\\">\\r\\n    [[+wf.linktext]]\\r\\n<\\/option>\\r\\n[[+wf.wrapper]]","locked":0,"properties":"","static":0,"static_file":"","content":"<option value=\\"[[+wf.link]]\\" selected=\\"selected\\">\\r\\n    [[+wf.linktext]]\\r\\n<\\/option>\\r\\n[[+wf.wrapper]]"}',
+        'guid' => '52d9e678060d43721c71a8ff9357c95b',
+        'native_key' => 25,
+        'signature' => 'f1b4608e46e819e5927f243b1f48ca63',
+      ),
+      '76c7082aef282353be89710e1524e3d8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":26,"source":0,"property_preprocess":0,"name":"navMobileRowTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<option value=\\"[[+wf.link]]\\">\\r\\n    [[+wf.linktext]]\\r\\n<\\/option>\\r\\n[[+wf.wrapper]]","locked":0,"properties":"","static":0,"static_file":"","content":"<option value=\\"[[+wf.link]]\\">\\r\\n    [[+wf.linktext]]\\r\\n<\\/option>\\r\\n[[+wf.wrapper]]"}',
+        'guid' => 'b7fa907d2b95b6678d5d43a49a775d14',
+        'native_key' => 26,
+        'signature' => 'd64aa5af23ee4b2b0e89821ce1d0f012',
+      ),
+      '807c99226ca752bf92544e11f784f7e6' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":27,"source":0,"property_preprocess":0,"name":"navMobileOuterTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+wf.wrapper]]","locked":0,"properties":"","static":0,"static_file":"","content":"[[+wf.wrapper]]"}',
+        'guid' => '46224a0a894bcd6f2d35dbf26a89a9bf',
+        'native_key' => 27,
+        'signature' => '3d9092d0709ec53e9be2b1ec9dc6e3db',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '4ab1e191eb82731b1afa18253a4a9dc7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"includeTemplate","description":"Include template code.","editor_type":0,"category":0,"cache_type":0,"snippet":"# Snippet to include template files from file system\\r\\n# USAGE: [[includeTemplate? &tpl=`mytemplate\\/template.html`]]\\r\\n\\r\\nif ( !isset($tpl) || $tpl== \\"\\" ) return \\"Missing Template file!\\";\\r\\n\\r\\n$tpl = $base_path .\'assets\\/templates\\/\'.$tpl;\\r\\nob_start();\\r\\ninclude($tpl);\\r\\nreturn ob_get_clean();","locked":0,"properties":null,"moduleguid":"","static":0,"static_file":"","content":"# Snippet to include template files from file system\\r\\n# USAGE: [[includeTemplate? &tpl=`mytemplate\\/template.html`]]\\r\\n\\r\\nif ( !isset($tpl) || $tpl== \\"\\" ) return \\"Missing Template file!\\";\\r\\n\\r\\n$tpl = $base_path .\'assets\\/templates\\/\'.$tpl;\\r\\nob_start();\\r\\ninclude($tpl);\\r\\nreturn ob_get_clean();"}',
+        'guid' => '3a0d5b8ddf212b62f862ca40cda7db0b',
+        'native_key' => 1,
+        'signature' => 'eb774b0695be949af4f9dd168f48adac',
+      ),
+    ),
+    'Templates' => 
+    array (
+      'b84ff6465ce70e22188297bda6c44707' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":1,"source":1,"property_preprocess":0,"templatename":"Flexibility","description":"Basic template for any page","editor_type":0,"category":0,"icon":"","template_type":0,"content":"","locked":0,"properties":"","static":1,"static_file":"assets\\/templates\\/flexibility\\/flexibility_basic_page.html"}',
+        'guid' => 'da8c19f3b1f54bccc429ea209ed7c710',
+        'native_key' => 1,
+        'signature' => '0de6aef5129d9c7fe2cb834516469d74',
+      ),
+      'c27c339b35c5b0a4dfbe4cf3ca514a6e' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":2,"source":1,"property_preprocess":0,"templatename":"Search results","description":"Search results Template","editor_type":0,"category":0,"icon":"","template_type":0,"content":"","locked":0,"properties":"","static":1,"static_file":"assets\\/templates\\/flexibility\\/flexibility_search_results.html"}',
+        'guid' => 'ff162efa056e41bb763d97c2247c3052',
+        'native_key' => 2,
+        'signature' => 'b2d66d8b31062b77a72dcc5ca7c0dc0b',
+      ),
+      'ba527cf65373ccdd482d80a4cb197dab' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+        'class' => 'modTemplate',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"templatename":"settings_template","description":"Template for site settings","editor_type":0,"category":0,"icon":"","template_type":0,"content":"","locked":0,"properties":"","static":0,"static_file":""}',
+        'guid' => 'd00482be591510b95d5447b9648a41b0',
+        'native_key' => 3,
+        'signature' => 'c975d83432621253747123f0d2ed1f92',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      '648b5ca3f48c22de67d9e9890dc22d90' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"type":"richtext","name":"footer_box_01","caption":"Footer-content box 1","description":"The content of the first footer-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":15,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '9f910cba99d65a79db52b773c3dd9416',
+        'native_key' => 1,
+        'signature' => 'cb5742abd4fcaf5c1c55be8af04b897f',
+      ),
+      '9111645acd73a09c048668a289045d90' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":2,"source":0,"property_preprocess":0,"type":"richtext","name":"footer_box_02","caption":"Footer-content box 2","description":"The content of the second footer-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":16,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '577c25ed4b56e2d85f7f65f1b5ae12c9',
+        'native_key' => 2,
+        'signature' => '474811e34ebbc40e77c0ec24fba90ec9',
+      ),
+      '848db1ad924b8683b084c13b349f4ae1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":3,"source":0,"property_preprocess":0,"type":"richtext","name":"footer_box_03","caption":"Footer-content box 3","description":"The content of the third footer-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":17,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => 'b53badfab9da474e6cfd2ad955a86b23',
+        'native_key' => 3,
+        'signature' => '5d84536448bf39bb454ebfc1d7c97230',
+      ),
+      'cebeb452bae737d71ba29ebe188851e5' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":4,"source":0,"property_preprocess":0,"type":"richtext","name":"footer_box_04","caption":"Footer-content box 4","description":"The content of the fourth footer-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":17,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '3ea1c5b127112876560e6d94bd4152b0',
+        'native_key' => 4,
+        'signature' => '7d9d3a5b26c5ed48bab59174c865a007',
+      ),
+      '1c5a15cdd80fb651792f200472454ff1' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":5,"source":0,"property_preprocess":0,"type":"richtext","name":"page_box_01","caption":"Sub-content box 1","description":"The content of the first sub-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":10,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '482fe815e7c65426477727aa42f04d25',
+        'native_key' => 5,
+        'signature' => 'fb7114465215691ca96f3a5f2b83e75e',
+      ),
+      'ed6db3cf8c24350ef1b1011227d8c71b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":6,"source":0,"property_preprocess":0,"type":"richtext","name":"page_box_02","caption":"Sub-content box 2","description":"The content of the second sub-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":11,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '6b333d3c2c001e04c5d0a2f9a54a0a51',
+        'native_key' => 6,
+        'signature' => 'ad662942d1e65cc78a5d66b6054ded20',
+      ),
+      '928dffd698f21993bbc60c585662856d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":7,"source":0,"property_preprocess":0,"type":"richtext","name":"page_box_03","caption":"Sub-content box 3","description":"The content of the third sub-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":12,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => 'f2da67414e0d39c8f697a1d78435d2f4',
+        'native_key' => 7,
+        'signature' => '5c0056ab6b3ab1c31b3a4cddaa7cc8f4',
+      ),
+      '385c436f77f3dc04a3e6e1cfb1135dd7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":8,"source":0,"property_preprocess":0,"type":"richtext","name":"page_box_04","caption":"Sub-content box 4","description":"The content of the fourth sub-content box","editor_type":0,"category":0,"locked":0,"elements":"","rank":13,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => 'fd5db22161d4baa476bf3655a9267c5d',
+        'native_key' => 8,
+        'signature' => '3774f09e4a4479124fe84ecf04c4b036',
+      ),
+      '1246aa6b51fb1f23a4d43dc86c623bc8' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":9,"source":0,"property_preprocess":0,"type":"richtext","name":"page_lightbox","caption":"Lightbox","description":"The content of the optional lightbox for this page (leave empty to have no lightbox)","editor_type":0,"category":0,"locked":0,"elements":"","rank":18,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '7607ebca4fb288db5ec3a3f5904199bd',
+        'native_key' => 9,
+        'signature' => '91247d4e20753a299337658e50dbf0c6',
+      ),
+      'e42fbdd39e42ebe9a89fa92c33650ff2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":10,"source":0,"property_preprocess":0,"type":"richtext","name":"sidebar","caption":"Sidebar option","description":"Content of the sidebar (leave empty if you want no sidebar)","editor_type":0,"category":0,"locked":0,"elements":"","rank":1,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '98aab11c45760459aeea0808e445c882',
+        'native_key' => 10,
+        'signature' => '5459b07be4cb6e868a35d83fe3de9f78',
+      ),
+      'a68b61aeace281dd8601d1f38ccaae39' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":11,"source":0,"property_preprocess":0,"type":"option","name":"optional_contactform","caption":"Contactform","description":"Do you want a contactform on this page?","editor_type":0,"category":0,"locked":0,"elements":"yes==yes||no==no","rank":4,"display":"default","default_text":"no","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"no","display_params":""}',
+        'guid' => '0faa70e4cca8d872b8d479d5328f75d4',
+        'native_key' => 11,
+        'signature' => '90bb442a128c2aa5776d8a6c0c741a4c',
+      ),
+      '242338a8ae3c4cccc071923a35b1b812' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":12,"source":0,"property_preprocess":0,"type":"option","name":"optional_gallery","caption":"Gallery","description":"Do you want a picture gallery on this page? (add pictures under: Components > Gallery)","editor_type":0,"category":0,"locked":0,"elements":"yes==yes||no==no","rank":2,"display":"default","default_text":"no","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"no","display_params":""}',
+        'guid' => '03afe93f3bcc7faced607a8ac0e98049',
+        'native_key' => 12,
+        'signature' => '0615fea9c4f6a205dcc0ed0fb893dc2b',
+      ),
+      'f5e65d745ee3b6f6fb1938cdb907e689' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":13,"source":0,"property_preprocess":0,"type":"option","name":"optional_slider","caption":"Slider","description":"Do you want a slider on this page? (too add slides go to: Site Settings > Template Variables)","editor_type":0,"category":0,"locked":0,"elements":"yes==yes||no==no","rank":1,"display":"default","default_text":"no","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"no","display_params":""}',
+        'guid' => 'ee0750dfd81849f66581e8987d9e6950',
+        'native_key' => 13,
+        'signature' => '01cccc471363f0b3b3d8f08dcf15c033',
+      ),
+      '166a27e33609695b3ede8b944e9d7952' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":14,"source":0,"property_preprocess":0,"type":"email","name":"email_adress","caption":"Email adress for the contactform","description":"Select the email adress where the contactform should mail to","editor_type":0,"category":0,"locked":0,"elements":"","rank":3,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '9e6d6fb82d37388e6dcb397e7b34eefb',
+        'native_key' => 14,
+        'signature' => '4e88f6b2f9bf6b709ce1f5fb7ca8aa8f',
+      ),
+      '3dfd5edd7996264680a8d0e10000a29b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":15,"source":0,"property_preprocess":0,"type":"option","name":"FooterBoxNumber","caption":"Footer boxes","description":"Select the number of footer boxes","editor_type":0,"category":0,"locked":0,"elements":"2==2||3==3||4==4","rank":14,"display":"default","default_text":"2","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"2","display_params":""}',
+        'guid' => '64f51f371d7971950d35cd61cd516ef8',
+        'native_key' => 15,
+        'signature' => '11282d8032101c3acd8867e94ab10215',
+      ),
+      '6b0bddc1dd3de78513bd5ae5c003154b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":16,"source":0,"property_preprocess":0,"type":"image","name":"siteLogo","caption":"Logo","description":"Select the website logo","editor_type":0,"category":0,"locked":0,"elements":"","rank":5,"display":"default","default_text":"","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '3af968676b32461ca0e18d44a473b1b0',
+        'native_key' => 16,
+        'signature' => '9de2aaff55cbabfd02cbe16115c6de71',
+      ),
+      '6f523b4251e7e80d423c1be6f9473781' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":17,"source":0,"property_preprocess":0,"type":"richtext","name":"slidetext","caption":"Richtext","description":"Slide text","editor_type":0,"category":0,"locked":0,"elements":null,"rank":0,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '8340059a6662877f430668c54dd5e1be',
+        'native_key' => 17,
+        'signature' => '7e2b026dd554f9127f96c76b1f212d5b',
+      ),
+      '459f3a8180ca233a159507a2012e2b73' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":18,"source":0,"property_preprocess":0,"type":"image","name":"image","caption":"image","description":"Slider image","editor_type":0,"category":0,"locked":0,"elements":null,"rank":0,"display":"text","default_text":"","properties":null,"input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '92c15bbda6cc0c4a7ffaa70240520c9f',
+        'native_key' => 18,
+        'signature' => '97016fe43b48263a1a7400d8b85e4b17',
+      ),
+      '0ab7bbaadfdb2d7978a8c0cf023dd87f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":19,"source":0,"property_preprocess":0,"type":"option","name":"page_boxes","caption":"Sub-content boxes","description":"How many sub-content boxes do you want on this page?","editor_type":0,"category":0,"locked":0,"elements":"0==0||2==2||3==3||4==4","rank":8,"display":"default","default_text":"0","properties":"a:0:{}","input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"0","display_params":""}',
+        'guid' => '7fd608079f44c4ada8caf93af981071a',
+        'native_key' => 19,
+        'signature' => '8f088bf1725d2ee108d6053781a9ae0a',
+      ),
+      '33568c25b2a0663af35e4faaac003fa3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":20,"source":0,"property_preprocess":0,"type":"richtext","name":"slide_content","caption":"Content for this slide","description":"Optional (leave blank to have no content for this slide)","editor_type":0,"category":0,"locked":0,"elements":null,"rank":4,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => 'cacc6db4a5649d1893bfbe4100c40ea7',
+        'native_key' => 20,
+        'signature' => '4845eefcf99014eb2eb22614f4b2216d',
+      ),
+      '1b0ca52a716300150127bf5bdb57e38a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modTemplateVar',
+        'object' => '{"id":21,"source":0,"property_preprocess":0,"type":"migx","name":"multiItemsGrid","caption":"Slider items","description":"The items in the slider","editor_type":0,"category":0,"locked":0,"elements":null,"rank":7,"display":"default","default_text":"","properties":null,"input_properties":"a:2:{s:8:\\"formtabs\\";s:377:\\"[\\r\\n{\\"caption\\":\\"Info\\", \\"fields\\": [\\r\\n    {\\"field\\":\\"title\\",\\"caption\\":\\"Title\\",\\"description\\":\\"Title for the image.\\"},\\r\\n    {\\"field\\":\\"content\\",\\"caption\\":\\"Content\\",\\"description\\":\\"Content of the slide (optional).\\",\\"inputTV\\":\\"slide_content\\"},\\r\\n    {\\"field\\":\\"description\\",\\"caption\\":\\"Description\\",\\"inputTV\\":\\"slidetext\\"},\\r\\n    {\\"field\\":\\"image\\",\\"caption\\":\\"Image\\",\\"inputTV\\":\\"image\\"}\\r\\n]}\\r\\n]\\r\\n\\";s:7:\\"columns\\";s:196:\\"[\\r\\n{\\"header\\": \\"Title\\", \\"width\\": \\"160\\", \\"sortable\\": \\"true\\", \\"dataIndex\\": \\"title\\"},\\r\\n{\\"header\\": \\"Image\\", \\"width\\": \\"50\\", \\"sortable\\": \\"false\\", \\"dataIndex\\": \\"image\\",\\"renderer\\": \\"this.renderImage\\"}\\r\\n]\\r\\n\\";}","output_properties":null,"static":0,"static_file":"","content":"","display_params":""}',
+        'guid' => '9d56dff131e36d790cac9357cbfd3329',
+        'native_key' => 21,
+        'signature' => '03f6e5cd9c553bd62e83a7c4d9cb7668',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/modCategory\\/73e87a4617c599d92b0a247bbd8e4c12.install.script.resolver","type":"php","name":"install.script"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/modCategory\\/73e87a4617c599d92b0a247bbd8e4c12.resolve.tv.resource.resolver","type":"php","name":"resolve.tv.resource"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/modCategory\\/73e87a4617c599d92b0a247bbd8e4c12.resolve.tv.template.resolver","type":"php","name":"resolve.tv.template"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/modCategory\\/73e87a4617c599d92b0a247bbd8e4c12\\/3\\/","target":"return MODX_ASSETS_PATH . \'templates\\/\';","name":"flexibility"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a890ee2f1d2090b9cbc7eb0fecc395cc',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '73e87a4617c599d92b0a247bbd8e4c12',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Flexibility"}',
+);

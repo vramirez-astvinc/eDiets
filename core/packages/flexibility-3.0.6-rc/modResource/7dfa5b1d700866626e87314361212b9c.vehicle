@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7e6c2371bd7c7ffad494e73152b62172',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '7dfa5b1d700866626e87314361212b9c',
+  'native_key' => 6,
+  'object' => '{"id":6,"type":"document","contentType":"text\\/html","pagetitle":"Sub page 1","longtitle":"Sub page 1","description":"Sub page 1","alias":"sub-page-1","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":4,"isfolder":0,"introtext":null,"content":"","richtext":1,"template":2,"menuindex":1,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"Sub page 1","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modResource","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

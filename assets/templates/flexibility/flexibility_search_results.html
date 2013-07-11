@@ -1,0 +1,23 @@
+[[$flexibility_header]]
+  <div class="row">
+    <div class="twelve columns">
+      <!-- START Content and optional sidebar -->
+      [[*sidebar:isnot=``:then=`
+      <div class="row">
+        <div class="eight columns">
+      `:else=`
+      `]]
+      [[*content]]
+      [[!SimpleSearch? &searchIndex=`flexibility_search_field`]]
+      [[[[*sidebar:isnot=``:then=`
+        </div>
+        <div class="four columns">
+          *sidebar
+        </div>
+      </div>
+      `:else=`
+      `]]]]
+      <!-- END Content and optional sidebar -->
+    </div>
+  </div>
+[[$flexibility_footer]]

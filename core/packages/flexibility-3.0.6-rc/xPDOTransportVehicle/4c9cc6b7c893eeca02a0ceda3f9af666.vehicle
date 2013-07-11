@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility-3.0.6-rc/xPDOTransportVehicle/4c9cc6b7c893eeca02a0ceda3f9af666/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'tinymce-4.3.3-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/xPDOTransportVehicle\\/4c9cc6b7c893eeca02a0ceda3f9af666.resolve.tinymce.resolver","type":"php","name":"resolve.tinymce"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/xPDOTransportVehicle\\/4c9cc6b7c893eeca02a0ceda3f9af666.validate.tinymce.validator","type":"php","name":"validate.tinymce"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '55cec0714068d6f89d7fd460e6702f79',
+  'package' => '',
+  'signature' => '4c9cc6b7c893eeca02a0ceda3f9af666',
+  'native_key' => '55cec0714068d6f89d7fd460e6702f79',
+);

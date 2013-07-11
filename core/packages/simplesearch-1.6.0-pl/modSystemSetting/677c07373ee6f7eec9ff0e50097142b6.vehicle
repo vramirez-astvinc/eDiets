@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sisea',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e8a1005fdaf1ba4420dbd5aef76d1d92',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '677c07373ee6f7eec9ff0e50097142b6',
+  'native_key' => 'sisea.driver_db_specific',
+  'object' => '{"key":"sisea.driver_db_specific","value":true,"xtype":"combo-boolean","namespace":"sisea","area":"Drivers","editedon":null}',
+);

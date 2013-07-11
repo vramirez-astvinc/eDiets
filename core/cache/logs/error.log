@@ -1,0 +1,21 @@
+[2013-07-11 20:14:25] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: formit-2.1.2-pl.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:25] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:25] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package formit-2.1.2-pl.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: gallery-1.5.2-pl.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package gallery-1.5.2-pl.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: if-1.1-pl.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package if-1.1-pl.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: migx-2.3.2-pl.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package migx-2.3.2-pl.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: simplesearch-1.6.0-pl.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package simplesearch-1.6.0-pl.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: switch-1.0-beta1.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:28] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package switch-1.0-beta1.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.
+[2013-07-11 20:14:29] (ERROR @ /ediets/connectors/workspace/packages.php) Could not open file for reading: tinymce-4.3.3-pl.transport.zip?revolution_version=Revolution-2.2.8-pl
+[2013-07-11 20:14:29] (ERROR @ /ediets/connectors/workspace/packages.php) MODX could not download the file. You must enable allow_url_fopen, cURL or fsockopen to use remote transport packaging.
+[2013-07-11 20:14:29] (ERROR @ /ediets/connectors/workspace/packages.php) Could not transfer package tinymce-4.3.3-pl.transport.zip to /Applications/MAMP/htdocs/ediets/core/packages/.

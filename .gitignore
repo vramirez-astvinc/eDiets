@@ -1,0 +1,13 @@
+# Mac OS X specific
+.DS_Store
+ 
+# ignore everything in this directory
+/*
+ 
+# but not these
+!.gitignore
+!assets/
+!core/
+!_SASS/
+!_JS/
+ 

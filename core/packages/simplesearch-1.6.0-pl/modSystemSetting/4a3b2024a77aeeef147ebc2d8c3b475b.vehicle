@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sisea',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f71b4a721b3032b900b6ce62d93c3cae',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4a3b2024a77aeeef147ebc2d8c3b475b',
+  'native_key' => 'sisea.solr.ssl_cert',
+  'object' => '{"key":"sisea.solr.ssl_cert","value":"","xtype":"textfield","namespace":"sisea","area":"Solr","editedon":null}',
+);

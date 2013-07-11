@@ -1000,4 +1000,17 @@
     'namespace_path' => '/Applications/MAMP/htdocs/ediets/manager/',
     'namespace_assets_path' => '{assets_path}',
   ),
+  78 => 
+  array (
+    'id' => '78',
+    'namespace' => 'gallery',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'gallery:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'gallery',
+    'namespace_path' => '/Applications/MAMP/htdocs/ediets/core/components/gallery/',
+    'namespace_assets_path' => NULL,
+  ),
 );

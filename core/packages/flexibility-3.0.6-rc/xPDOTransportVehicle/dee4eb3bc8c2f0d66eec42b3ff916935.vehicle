@@ -1,0 +1,32 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility-3.0.6-rc/xPDOTransportVehicle/dee4eb3bc8c2f0d66eec42b3ff916935/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'formit-2.1.2-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/xPDOTransportVehicle\\/dee4eb3bc8c2f0d66eec42b3ff916935.resolve.formit.resolver","type":"php","name":"resolve.formit"}',
+    ),
+  ),
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-3.0.6-rc\\/xPDOTransportVehicle\\/dee4eb3bc8c2f0d66eec42b3ff916935.validate.formit.validator","type":"php","name":"validate.formit"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '6906007149e369caee00dbfcae0b1bd9',
+  'package' => '',
+  'signature' => 'dee4eb3bc8c2f0d66eec42b3ff916935',
+  'native_key' => '6906007149e369caee00dbfcae0b1bd9',
+);

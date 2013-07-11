@@ -1,0 +1,60 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Snippets' => 
+    array (
+      '660994e5e14ff832b2df72f720b18530' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":30,"name":"switch","description":"Simple switch snippet","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/*\\n  * Switch\\n  *\\n  * Created by Uro\\u0161 Likar\\n  * uros.likar@gmail.com\\n  * http:\\/\\/uros.likar.si\\n  *\\n  *\\/\\n  \\n  if(empty($default)) $default = \'\';  \\n  $i = 1;  \\n  while(isset(${\'c\'.$i})){\\n    $case[$i] = trim(${\'c\'.$i});\\n    $do[$i] = trim(${\'do\'.$i});\\n    $i++;  \\n  }\\n  \\n  $key = array_search(trim($get),$case); \\n  if(!empty($key)) $output = $do[$key]; else $output = $default;\\n    \\n  return $output;","locked":0,"properties":"a:0:{}","moduleguid":""}',
+        'guid' => 'd862ff45aefac15012faab92507edde8',
+        'native_key' => 30,
+        'signature' => '5ca7af8db27703e4a250a0e558c20d5d',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'switch',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '44584c80a24fc1ebf090737eb99c8611',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'ec362fd473e3cdb693c84d576b14ba82',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"Switch"}',
+);

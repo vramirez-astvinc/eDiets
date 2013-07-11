@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => true,
+  'unique_key' => 'pagetitle',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '118fdfde37c297ec2ed0f94aacc94456',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '19016de3831c3cccd05d5fc5b9a41779',
+  'native_key' => 1,
+  'object' => '{"id":1,"type":"document","contentType":"text\\/html","pagetitle":"Home","longtitle":"Homepage","description":"Home","alias":"home","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":null,"content":"<h3>Main content title<\\/h3>\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend. Donec ipsum velit, pretium ac lacinia suscipit, hendrerit non sapien. Mauris gravida bibendum egestas. Sed at mi justo. Phasellus et porttitor justo. Cras nec lacus enim, at porta velit. Nam mattis, nisi nec consequat molestie, nulla nisi blandit lectus, quis imperdiet lectus neque ut leo. Integer sollicitudin dictum orci. Integer id tellus sem. Nunc tellus massa, scelerisque quis adipiscing sit amet, adipiscing et felis. Morbi eu lacus suscipit nunc tempor dignissim. Etiam quis diam mauris, eget varius dolor.<\\/p>","richtext":1,"template":2,"menuindex":1,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"Home","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modResource","context_key":"web","content_type":1,"uri":null,"uri_override":0,"hide_children_in_tree":0,"show_in_tree":1,"properties":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sisea',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3b144d3b9ae53725b3ea6936fd6f426e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e2dfde260f714d89442f65632e4acb80',
+  'native_key' => 'sisea.solr.password',
+  'object' => '{"key":"sisea.solr.password","value":"","xtype":"textfield","namespace":"sisea","area":"Solr","editedon":null}',
+);
