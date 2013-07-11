@@ -1,0 +1,107 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'a4fe1922618ecb550c15cb72cf61ee1f' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"modshopifyOuter","description":"Tpl chunk for the outer container","editor_type":0,"category":0,"cache_type":0,"snippet":"<h2>Products<\\/h2>\\n<ul class=\\"products\\">\\n  [[+products]]\\n<\\/ul>","locked":0,"properties":null,"static":0,"static_file":"","content":"<h2>Products<\\/h2>\\n<ul class=\\"products\\">\\n  [[+products]]\\n<\\/ul>"}',
+        'guid' => 'aac62a6e222df6e67dc1a2806e4b1993',
+        'native_key' => NULL,
+        'signature' => '3f823f290e262804549f0037c5d45318',
+      ),
+      'a3def394c557398c922910e301f3217a' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"modshopifyProduct","description":"Tpl chunk for a single product","editor_type":0,"category":0,"cache_type":0,"snippet":"<li>\\n  <span class=\\"vendor\\">[[+vendor]]<\\/span> &ndash; <span class=\\"title\\">[[+title]]<\\/span>\\n  <div class=\\"description\\">\\n    [[+body_html]]\\n  <\\/div>\\n  [[+images:notempty=`<div class=\\"images\\">[[+images]]<\\/div>`]]\\n  <form action=\\"https:\\/\\/[[+domain]]\\/cart\\/add\\" method=\\"post\\" target=\\"_blank\\">\\n    <select name=\\"id\\">[[+variants]]<\\/select>\\n    <input type=\\"submit\\" name=\\"add\\" value=\\"Buy\\" \\/>\\n  <\\/form>\\n<\\/li>","locked":0,"properties":null,"static":0,"static_file":"","content":"<li>\\n  <span class=\\"vendor\\">[[+vendor]]<\\/span> &ndash; <span class=\\"title\\">[[+title]]<\\/span>\\n  <div class=\\"description\\">\\n    [[+body_html]]\\n  <\\/div>\\n  [[+images:notempty=`<div class=\\"images\\">[[+images]]<\\/div>`]]\\n  <form action=\\"https:\\/\\/[[+domain]]\\/cart\\/add\\" method=\\"post\\" target=\\"_blank\\">\\n    <select name=\\"id\\">[[+variants]]<\\/select>\\n    <input type=\\"submit\\" name=\\"add\\" value=\\"Buy\\" \\/>\\n  <\\/form>\\n<\\/li>"}',
+        'guid' => 'bde5c9d28cc2079486611c77c04ef601',
+        'native_key' => NULL,
+        'signature' => '6b9418f5a79643c1b5a5de5f0aad4f50',
+      ),
+      '74ce5a4a4c013b5403c29756afc759b7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"modshopifyProductImg","description":"Tpl chunk for a single product image","editor_type":0,"category":0,"cache_type":0,"snippet":"<img src=\\"[[+src]]\\" alt=\\"[[+alt]]\\" \\/>","locked":0,"properties":null,"static":0,"static_file":"","content":"<img src=\\"[[+src]]\\" alt=\\"[[+alt]]\\" \\/>"}',
+        'guid' => '409bc7620371938b7b383bcf794bea4c',
+        'native_key' => NULL,
+        'signature' => '6159f3d25d0d2a9eec725c72e453b247',
+      ),
+      '862b10a2bfa55f11fd45cb0ee2f933c7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"modshopifyProductVariant","description":"Tpl chunk for a single product variant","editor_type":0,"category":0,"cache_type":0,"snippet":"<option value=\\"[[+id]]\\">[[+title]] - [[+price]]<\\/option>","locked":0,"properties":null,"static":0,"static_file":"","content":"<option value=\\"[[+id]]\\">[[+title]] - [[+price]]<\\/option>"}',
+        'guid' => '9f7da1d7eab165c5230bc0616fb5b8f7',
+        'native_key' => NULL,
+        'signature' => '380ab88a62eaab70e4e52e925d4fe3b0',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'f77b625887aa9f6606b3078ab525c709' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":null,"source":0,"property_preprocess":0,"name":"getProducts","description":"Get a list of all products","editor_type":0,"category":0,"cache_type":0,"snippet":"$defaults = array(  \\n  \'limit\' => 50,\\n  \'page\' => 1,\\n  \'published_status\' => \'published\',\\n  \\n  \'containerTpl\' => \'modshopifyOuterTpl\',\\n  \'productTpl\' => \'modshopifyProductTpl\',\\n  \'productImgTpl\' => \'modshopifyProductImgTpl\',\\n  \'productVariantTpl\' => \'modshopifyProductVariantTpl\',\\n  \\n  \'thumbsWidth\' => 200,\\n  \'thumbsHeight\' => 200,\\n  \'thumbsArgs\' => \'&zc=1\'\\n);\\n\\n$scriptProperties = array_merge($defaults,$scriptProperties);\\n$scriptProperties[\'thumbs_options\'] = \\"\\";\\nif (!empty($scriptProperties[\'thumbsWidth\'])) $scriptProperties[\'thumbs_options\'] .= \\"&w=\\" . $scriptProperties[\'thumbsWidth\'];\\nif (!empty($scriptProperties[\'thumbsHeight\'])) $scriptProperties[\'thumbs_options\'] .= \\"&h=\\" . $scriptProperties[\'thumbsHeight\'];\\n$scriptProperties[\'thumbs_options\'] .= $scriptProperties[\'thumbsArgs\'];\\nunset($scriptProperties[\'thumbsWidth\'], $scriptProperties[\'thumbsHeight\'], $scriptProperties[\'thumbsArgs\']);\\n\\n$path = $modx->getOption(\'modshopify.core_path\', $config, $modx->getOption(\'core_path\').\'components\\/modshopify\\/\');\\n$ms = $modx->getService(\'modshopify\', \'ModShopify\', $path . \'model\\/\', $scriptProperties);\\n\\n$output = array();\\n$shop = $ms->getShop();\\nif(empty($shop)) return;\\n\\n$products = $ms->getProducts();\\nif(empty($products)) return;\\n\\nforeach ($products as $product) {\\n  $variants = array();\\n  foreach ($product[\'variants\'] as $variant) {\\n    $variant[\'price\'] = preg_replace(\'\\/{{.*}}\\/\', $variant[\'price\'], $shop[\'money_format\']);\\n    $variants[] = $ms->getChunk($scriptProperties[\'productVariantTpl\'], $variant);\\n  }\\n  $product[\'variants\'] = implode($scriptProperties[\'variantSeparator\'], $variants);\\n  if (!empty($product[\'images\'])) {\\n    $images = array();\\n    foreach ($product[\'images\'] as $image) {\\n      $image[\'alt\'] = trim($product[\'title\'], \\"\'\\\\\\"\\");\\n      if (!empty($scriptProperties[\'thumbs_options\'])) {\\n        $image[\'src\'] = $modx->runSnippet(\\"phpthumbof\\", array(\\n          \'input\' => $image[\'src\'],\\n          \'options\' => $scriptProperties[\'thumbs_options\']\\n        ));\\n      }\\n      $images[] = $ms->getChunk($scriptProperties[\'productImgTpl\'], $image);\\n    }\\n    $product[\'images\'] = implode($scriptProperties[\'imageSeparator\'], $images);\\n  } else {\\n    unset ($product[\'images\']);\\n  }\\n  $product = array_merge(\\n    $product,\\n    array(\\n      \'domain\' => $shop[\'domain\']\\n    )\\n  );\\n  $output[] = $ms->getChunk($scriptProperties[\'productTpl\'], $product);\\n}\\n$output = implode($scriptProperties[\'productSeparator\'], $output);\\n\\n$output = $ms->getChunk($scriptProperties[\'containerTpl\'], array(products => $output));\\n\\nreturn $output;","locked":0,"properties":"a:10:{s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:26:\\"modshopify.prop_desc.limit\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:2:\\"50\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:4:\\"page\\";a:7:{s:4:\\"name\\";s:4:\\"page\\";s:4:\\"desc\\";s:25:\\"modshopify.prop_desc.page\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:1:\\"1\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:16:\\"published_status\\";a:7:{s:4:\\"name\\";s:16:\\"published_status\\";s:4:\\"desc\\";s:37:\\"modshopify.prop_desc.published_status\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:9:\\"published\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"containerTpl\\";a:7:{s:4:\\"name\\";s:12:\\"containerTpl\\";s:4:\\"desc\\";s:33:\\"modshopify.prop_desc.containerTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:18:\\"modshopifyOuterTpl\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"productTpl\\";a:7:{s:4:\\"name\\";s:10:\\"productTpl\\";s:4:\\"desc\\";s:31:\\"modshopify.prop_desc.productTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:20:\\"modshopifyProductTpl\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"productImgTpl\\";a:7:{s:4:\\"name\\";s:13:\\"productImgTpl\\";s:4:\\"desc\\";s:34:\\"modshopify.prop_desc.productImgTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:23:\\"modshopifyProductImgTpl\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:17:\\"productVariantTpl\\";a:7:{s:4:\\"name\\";s:17:\\"productVariantTpl\\";s:4:\\"desc\\";s:38:\\"modshopify.prop_desc.productVariantTpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:27:\\"modshopifyProductVariantTpl\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"thumbsWidth\\";a:7:{s:4:\\"name\\";s:11:\\"thumbsWidth\\";s:4:\\"desc\\";s:32:\\"modshopify.prop_desc.thumbsWidth\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";i:200;s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"thumbsHeight\\";a:7:{s:4:\\"name\\";s:12:\\"thumbsHeight\\";s:4:\\"desc\\";s:33:\\"modshopify.prop_desc.thumbsHeight\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";i:200;s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"thumbsArgs\\";a:7:{s:4:\\"name\\";s:10:\\"thumbsArgs\\";s:4:\\"desc\\";s:31:\\"modshopify.prop_desc.thumbsArgs\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";s:0:\\"\\";s:5:\\"value\\";s:5:\\"&zc=1\\";s:7:\\"lexicon\\";s:21:\\"modshopify:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"","content":"$defaults = array(  \\n  \'limit\' => 50,\\n  \'page\' => 1,\\n  \'published_status\' => \'published\',\\n  \\n  \'containerTpl\' => \'modshopifyOuterTpl\',\\n  \'productTpl\' => \'modshopifyProductTpl\',\\n  \'productImgTpl\' => \'modshopifyProductImgTpl\',\\n  \'productVariantTpl\' => \'modshopifyProductVariantTpl\',\\n  \\n  \'thumbsWidth\' => 200,\\n  \'thumbsHeight\' => 200,\\n  \'thumbsArgs\' => \'&zc=1\'\\n);\\n\\n$scriptProperties = array_merge($defaults,$scriptProperties);\\n$scriptProperties[\'thumbs_options\'] = \\"\\";\\nif (!empty($scriptProperties[\'thumbsWidth\'])) $scriptProperties[\'thumbs_options\'] .= \\"&w=\\" . $scriptProperties[\'thumbsWidth\'];\\nif (!empty($scriptProperties[\'thumbsHeight\'])) $scriptProperties[\'thumbs_options\'] .= \\"&h=\\" . $scriptProperties[\'thumbsHeight\'];\\n$scriptProperties[\'thumbs_options\'] .= $scriptProperties[\'thumbsArgs\'];\\nunset($scriptProperties[\'thumbsWidth\'], $scriptProperties[\'thumbsHeight\'], $scriptProperties[\'thumbsArgs\']);\\n\\n$path = $modx->getOption(\'modshopify.core_path\', $config, $modx->getOption(\'core_path\').\'components\\/modshopify\\/\');\\n$ms = $modx->getService(\'modshopify\', \'ModShopify\', $path . \'model\\/\', $scriptProperties);\\n\\n$output = array();\\n$shop = $ms->getShop();\\nif(empty($shop)) return;\\n\\n$products = $ms->getProducts();\\nif(empty($products)) return;\\n\\nforeach ($products as $product) {\\n  $variants = array();\\n  foreach ($product[\'variants\'] as $variant) {\\n    $variant[\'price\'] = preg_replace(\'\\/{{.*}}\\/\', $variant[\'price\'], $shop[\'money_format\']);\\n    $variants[] = $ms->getChunk($scriptProperties[\'productVariantTpl\'], $variant);\\n  }\\n  $product[\'variants\'] = implode($scriptProperties[\'variantSeparator\'], $variants);\\n  if (!empty($product[\'images\'])) {\\n    $images = array();\\n    foreach ($product[\'images\'] as $image) {\\n      $image[\'alt\'] = trim($product[\'title\'], \\"\'\\\\\\"\\");\\n      if (!empty($scriptProperties[\'thumbs_options\'])) {\\n        $image[\'src\'] = $modx->runSnippet(\\"phpthumbof\\", array(\\n          \'input\' => $image[\'src\'],\\n          \'options\' => $scriptProperties[\'thumbs_options\']\\n        ));\\n      }\\n      $images[] = $ms->getChunk($scriptProperties[\'productImgTpl\'], $image);\\n    }\\n    $product[\'images\'] = implode($scriptProperties[\'imageSeparator\'], $images);\\n  } else {\\n    unset ($product[\'images\']);\\n  }\\n  $product = array_merge(\\n    $product,\\n    array(\\n      \'domain\' => $shop[\'domain\']\\n    )\\n  );\\n  $output[] = $ms->getChunk($scriptProperties[\'productTpl\'], $product);\\n}\\n$output = implode($scriptProperties[\'productSeparator\'], $output);\\n\\n$output = $ms->getChunk($scriptProperties[\'containerTpl\'], array(products => $output));\\n\\nreturn $output;"}',
+        'guid' => 'fb0c907fcc987bc6cb3c9ba4fd4ae63b',
+        'native_key' => NULL,
+        'signature' => 'bbb36464e27c31899ca4e9b150589bac',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'modshopify',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modshopify-1.0-alpha\\/modCategory\\/2293b97fd130b4340125316b3e6ba715\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"modshopify"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modshopify-1.0-alpha\\/modCategory\\/2293b97fd130b4340125316b3e6ba715.setupoptions.resolver.resolver","type":"php","name":"setupoptions.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a31328ae892c16d6f15b05aff9769340',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '2293b97fd130b4340125316b3e6ba715',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"modShopify"}',
+);

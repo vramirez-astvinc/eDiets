@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'modshopify',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7bf44dc57013c2dfa04868bc5c170377',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '690a259258a1ba0d6bd85dbd1a23cf3f',
+  'native_key' => 'modshopify.auth_secret',
+  'object' => '{"key":"modshopify.auth_secret","value":"","xtype":"textfield","namespace":"modshopify","area":"authentication","editedon":null}',
+);
